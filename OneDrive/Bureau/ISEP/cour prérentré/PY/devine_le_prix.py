@@ -9,15 +9,17 @@ import random
 # fin au bout de 5 essais ou si le prix a été trouvé
 
 prix = random.randint(0, 4)
-for i in range(5):
-    essai = int(input('Quel est le prix : '))
+    for i in range(5):
+        essai = int(input('Quel est le prix : '))
 
-    if prix > essai:
-        print('Pas assez')
-    elif prix < essai:
-        print('trop élevé')
+        if prix > essai:
+            print('Pas assez')
+        elif prix < essai:
+            print('trop élevé')
+        else:
+            print('Bravo, vous avez trouvé le bon prix!')
+            break
     else:
-        print('Bravo, vous avez trouvé le bon prix!')
-        break
-else:
-    print('Perdu, vous n\'avez pas trouvé le bon prix. Le prix était', prix)
+        print('Perdu, vous n avez pas trouvé le bon prix. Le prix était', prix)
+
+
